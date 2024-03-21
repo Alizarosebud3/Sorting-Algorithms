@@ -40,8 +40,6 @@ def chooseASort():
 
     return
 
-
-
 print("Sorting Algorithm Demo".center(40,'-'))
 chooseASort()
 print("Input a string of numbers you'd like to sort.")
