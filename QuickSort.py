@@ -7,9 +7,9 @@
 #       4.Based on pivot filter others as if less than (increment less than pointer) and greater than (Swap)
 #       5.Recursive
 
-array = [5,3,2,1,4]
-low = 0
-high = None
+# array = [5,3,2,1,4]
+# low = 0
+# high = None
 # define the partition position function
 def partition(array, low, high):
     # Grab the rightmost element and set as the pivot point 
@@ -35,7 +35,7 @@ def partition(array, low, high):
 
 # Define quick sort function 
 # Must take in an array, a low number, and high number to allow recursive to work
-def quicksort(array, low, high):
+def quickSort(array, low, high):
     # print("array =",array)
     # check to see if high = None - if so set as last element in array
     if high is None:
@@ -51,11 +51,11 @@ def quicksort(array, low, high):
         pivotIndex = partition(array,low,high)
 
         # recursive smaller / left of pivot index 
-        quicksort(array, low, pivotIndex - 1)
+        quickSort(array, low, pivotIndex - 1)
 
         # recursive larger / right of pivot index
-        quicksort(array, pivotIndex + 1, high)
+        quickSort(array, pivotIndex + 1, high)
     
     return
 
-quicksort(array,low,high)
+# quickSort(array,low,high)

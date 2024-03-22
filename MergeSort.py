@@ -6,7 +6,7 @@
 #       3. Divide first half of sub array into more sub arrays until sub array contain one element
 #       4. Merge together placing the smaller value first
 
-array = [5,3,2,1,4]
+# array = [5,3,2,1,4]
 def mergeSort(array):
     # print("array =",array)
 
@@ -54,5 +54,5 @@ def mergeSort(array):
 
 
     
-mergeSort(array)
+# mergeSort(array)
 # print("array =",array)
